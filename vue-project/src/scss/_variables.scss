@@ -1,0 +1,22 @@
+
+//overrides
+$primary: #3B47CE;
+$success: rgb(2, 129, 0);
+$dark: #0B0014;
+
+
+@import "bootstrap/scss/functions";
+@import 'bootstrap/scss/variables';
+
+
+$colors: (
+        "background": #EAE9E8,
+        "accent-emphasis": #667e74,
+        "accent": #A3C4B6,
+        "brand": #3A947D,
+);
+
+$background: map-get($map: $colors, $key: "background");
+$accent-emphasis: map-get($map: $colors, $key: "accent-emphasis");
+
+$theme-colors: map-merge($theme-colors, $colors);
